@@ -1,7 +1,4 @@
-from typing import List
-
-
-def compute_values(n: int) -> List[int]:
+def compute_values(n) :
   result = []
   for i in range(n):
     if i == 0:
