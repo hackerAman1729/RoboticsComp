@@ -1,6 +1,4 @@
-from typing import List
-
-def generate_pattern(n: int) -> List[str]:
+def generate_pattern(n):
     rows = []
     for i in range(n, 0, -1):
         row = ""
@@ -12,11 +10,10 @@ def generate_pattern(n: int) -> List[str]:
         rows.append(row)
     return rows
 
-# Read the number of test cases
 test_cases = int(input())
 
 for _ in range(test_cases):
-    n = int(input())  # Read the integer N for each test case
+    n = int(input())  
     pattern = generate_pattern(n)
     for row in pattern:
         print(row)
