@@ -1,4 +1,4 @@
-def word_lengths(sentence: str) -> str:
+def word_lengths(sentence):
   words = sentence[1:].split()
   lengths = [str(len(word)) for word in words]
   return ",".join(lengths)
